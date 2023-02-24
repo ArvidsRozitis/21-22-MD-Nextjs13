@@ -1,1 +1,1 @@
-# Food recipe aps in nextjs13
+# Food recipe app in nextjs13
