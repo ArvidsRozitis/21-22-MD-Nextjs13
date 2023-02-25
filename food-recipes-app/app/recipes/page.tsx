@@ -1,5 +1,10 @@
 const recipes = () => {
-  return <div>receptes</div>;
+  return (
+    <>
+      <div className="testbox"></div>
+      <div>receptes</div>
+    </>
+  );
 };
 
 export default recipes;
