@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ['media.istockphoto.com'],
+    domains: ['media.istockphoto.com', "images.immediate.co.uk"],
   }, 
 }
 

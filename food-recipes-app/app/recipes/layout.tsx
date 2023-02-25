@@ -1,4 +1,5 @@
 import styles from "./recipes.module.scss";
+import FeaturedList from "@/components/FeaturedList/FeaturedList";
 export default function RecepesLayout({
   children,
 }: {
@@ -7,7 +8,7 @@ export default function RecepesLayout({
   return (
     <>
       <div className={styles.pageContainer}>
-        <h1>side bar</h1>
+        <FeaturedList />
         <div className={styles.recipesContainer}>
           <span>search komponents</span>
           {children}
