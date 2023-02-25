@@ -5,7 +5,7 @@ const nextConfig = {
   },
   images: {
     domains: ['media.istockphoto.com', "images.immediate.co.uk"],
-  }, 
+  },
 }
 
 

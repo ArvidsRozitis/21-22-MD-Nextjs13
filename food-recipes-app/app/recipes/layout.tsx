@@ -10,7 +10,6 @@ export default function RecepesLayout({
       <div className={styles.pageContainer}>
         <FeaturedList />
         <div className={styles.recipesContainer}>
-          <span>search komponents</span>
           {children}
         </div>
       </div>
