@@ -5,12 +5,5 @@ export default function RecepesLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <>
-      <div className={styles.pageContainer}>
-        <FeaturedList />
-        <div className={styles.recipesContainer}>{children}</div>
-      </div>
-    </>
-  );
+  return <>{children}</>;
 }

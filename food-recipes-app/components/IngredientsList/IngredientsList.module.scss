@@ -1,0 +1,17 @@
+.listContainer {
+    display: flex;
+    flex-direction: column;
+}
+.listItem {
+    font-size: 0.75rem;
+}
+.listHeading {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+}
+.listSpanMore {
+    color: orange;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 0.75rem;
+}

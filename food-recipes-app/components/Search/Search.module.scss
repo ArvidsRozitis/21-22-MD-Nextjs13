@@ -2,25 +2,30 @@
   display: flex;
   flex-direction: column;
 }
-.searchLabel {
-    display: flex;
-    flex-direction: column;
+.searchBox {
+  display: flex;
+  flex-direction: column;
+}
+.searchTopText {
+  padding-left: 25px;
 }
 .inputContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
 }
 .searchInput {
   all: unset;
   width: 100px;
   border: solid 1px grey;
   border-radius: 20px;
-  padding: 4px 10px ;
+  padding: 2px 15px;
+  padding-bottom: 5px;
   font-size: 1.25rem;
   color: rgb(141, 141, 141);
   transition: width 0.2s ease-in-out;
+
   &:focus {
     width: 280px;
   }
@@ -28,4 +33,3 @@
     color: rgb(201, 201, 200);
   }
 }
-
