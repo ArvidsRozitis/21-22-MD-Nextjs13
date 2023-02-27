@@ -1,20 +1,16 @@
 import styles from "./FeaturedList.module.scss";
 import FeaturedItem from "./FeaturedItem/FeaturedItem";
+import RecipesType from "@/utils/interfaces/recipes";
 
-type FeaturedRecipes = {
-  _id: string;
-  title: string;
-  imageSrc: string;
-};
 
 const fetchFeaturedRecipes = async () => {
-  const res = await fetch("http://localhost:3000/api/featuredRecipes");
-  const featuredRecipes: FeaturedRecipes[] = await res.json();
-  return featuredRecipes
+  const res = await fetch("http://localhost:3000/api/recipes");
+  const featuredRecipes: RecipesType[] = await res.json();
+  return featuredRecipes;
 };
 
 const FeaturedList = async () => {
-  const featuredRecipes = await fetchFeaturedRecipes() 
+  const featuredRecipes = await fetchFeaturedRecipes();
   return (
     <div className={styles.featuredListContainer}>
       <h2 className={styles.featuredListHeading}>Featured</h2>

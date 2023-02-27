@@ -5,11 +5,11 @@ import IngredientsList from "../IngredientsList/IngredientsList";
 type RecipeProps = {
   title: string;
   imageSrc: string;
-  step1: string;
   ingredients: string[];
+  step: string[];
 };
 
-const RecipeCard = ({ title, step1, imageSrc, ingredients }: RecipeProps) => {
+const RecipeCard = ({ title, step, imageSrc, ingredients }: RecipeProps) => {
   return (
     <div className={styles.cardContainer}>
       <div>
@@ -28,11 +28,11 @@ const RecipeCard = ({ title, step1, imageSrc, ingredients }: RecipeProps) => {
       <div className={styles.cardInfo}>
         <h2 className={styles.cardTitle}>{title}</h2>
         <div className={styles.paragraphContainer}>
-          <p className={styles.cardParagraph}>{step1}</p>
+          {/* <p className={styles.cardParagraph}>{step}</p> */}
           <span className={styles.readMore}>read more...</span>
         </div>
 
-        <IngredientsList ingredients={ingredients} />
+        {/* <IngredientsList ingredients={ingredients} /> */}
       </div>
     </div>
   );
